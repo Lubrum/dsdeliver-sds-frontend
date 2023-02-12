@@ -15,19 +15,15 @@ npx create-react-app front-web --template typescript --use-npm
 
 # Pré-requisitos
 
-## docker
+- docker
 
-## docker compose
-
-```bash 
-npm install
-```
+- docker compose
 
 # Execução (com Docker)
 
 Pré-requisito: arquivo .env na raíz do projeto com as seguintes variáveis de ambiente:
 
-- REACT_APP_ACCESS_TOKEN_MAP_BOX: token para acesso à api do [Map Box](https://www.mapbox.com/), para o mapa da aplicação. É necessário criar um token no Map Box;
+- REACT_APP_ACCESS_TOKEN_MAP_BOX: token para acesso à api do [Map Box](https://www.mapbox.com/) para o mapa da aplicação. É necessário criar um token no Map Box;
 
 - REACT_APP_API_URL: url do backend deste serviço. [Pode ser acessado neste link](https://github.com/Lubrum/dsdeliver-sds-backend/tree/main);
 
@@ -55,4 +51,4 @@ As variáveis de ambiente deste serviço são cadastradas diretamente nas config
 
 [Tutorial passo a passo do deploy no Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/).
 
-Live link: https://sds2-luciano-brum.netlify.app/
+Live link: https://sds2-delivery-food.netlify.app
