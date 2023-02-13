@@ -28,12 +28,12 @@ Pré-requisito: arquivo .env na raíz do projeto com as seguintes variáveis de 
 - REACT_APP_API_ORDERS_URL: path api de geração de pedidos de produtos. No caso, é /orders;
 
 ```bash 
-netlify dev
+npm run netlify:start
 ```
 
 # Deploy no Netlify
 
-O deploy do frontend é automático, a cada push feito no github.
+O deploy do frontend é feito a cada push feito no github automaticamente.
 
 As variáveis de ambiente deste serviço são cadastradas diretamente nas configurações do site no Netlify. Não é utilizado o arquivo .env em produção.
 
