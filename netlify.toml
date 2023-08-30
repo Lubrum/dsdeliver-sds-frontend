@@ -1,11 +1,11 @@
 [[redirects]]
   from = "/orderss"
-  to = ${ORDERS_URL}
+  to = "${ORDERS_URL}"
   status = 200
   force = true
 
 [[redirects]]
   from = "/products"
-  to = ${PRODUCTS_URL}
+  to = "${PRODUCTS_URL}"
   status = 200
   force = true
