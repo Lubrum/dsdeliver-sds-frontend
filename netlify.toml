@@ -1,11 +1,11 @@
 [[redirects]]
   from = "/orderss"
-  to = "http://ec2-18-229-105-100.sa-east-1.compute.amazonaws.com/orders"
+  to = ${ORDERS_URL}
   status = 200
   force = true
 
 [[redirects]]
   from = "/products"
-  to = "http://ec2-18-229-105-100.sa-east-1.compute.amazonaws.com/products"
+  to = ${PRODUCTS_URL}
   status = 200
   force = true
