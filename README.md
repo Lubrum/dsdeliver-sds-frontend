@@ -27,10 +27,6 @@ Pré-requisito: arquivo .env na raíz do projeto com as seguintes variáveis de 
 
 - REACT_APP_API_ORDERS_URL: path api de geração de pedidos de produtos. No caso, é /orders;
 
-- ORDERS_URL: url da api para obtenção dos pedidos de entrega. Está no projeto [sdsdeliver-sds-backend](https://github.com/Lubrum/dsdeliver-sds-backend);
-
-- PRODUCTS_URL: url da api para obtenção dos produtos. Está no projeto [sdsdeliver-sds-backend](https://github.com/Lubrum/dsdeliver-sds-backend);
-
 ```bash 
 npm run netlify:start
 ```
