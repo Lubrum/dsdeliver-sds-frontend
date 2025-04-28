@@ -3,22 +3,21 @@
   "version": "0.1.1",
   "private": true,
   "dependencies": {
-    "@types/jest": "29.4.0",
-    "@types/node": "18.13.0",
-    "@types/react": "18.0.27",
-    "@types/react-dom": "18.0.10",
+    "@types/jest": "29.5.14",
+    "@types/node": "22.15.2",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
     "@types/react-router-dom": "5.3.3",
-    "axios": "1.7.4",
-    "leaflet": "1.9.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-leaflet": "4.2.0",
-    "react-router-dom": "6.8.1",
+    "axios": "1.9.0",
+    "leaflet": "1.9.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-leaflet": "5.0.0",
+    "react-router-dom": "7.5.2",
     "react-scripts": "5.0.1",
-    "react-select": "5.7.0",
-    "react-toastify": "9.1.1",
-    "typescript": "4.9.5",
-    "web-vitals": "3.1.1"
+    "react-select": "5.10.1",
+    "react-toastify": "11.0.5",
+    "web-vitals": "4.2.4"
   },
   "scripts": {
     "netlify:start": "netlify dev",
@@ -46,7 +45,8 @@
     ]
   },
   "devDependencies": {
-    "@types/leaflet": "1.9.0"
+    "@types/leaflet": "1.9.17",
+    "typescript": "^4.9.5"
   },
   "overrides": {
     "nth-check": "^2.0.1",
