@@ -13,6 +13,8 @@ Este projeto consome uma **API REST** responsável pelo processamento dos pedido
 
 # Preview
 
+![Application Screenshot](docs/preview.png)
+
 ---
 
 # Tecnologias utilizadas
