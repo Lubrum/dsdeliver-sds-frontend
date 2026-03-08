@@ -1,42 +1,165 @@
-# Projeto Frontend
+# DS Deliver Frontend
 
-Este é o frontend do sistema de encomendas e entrega de pedidos feito com ReactJS. 
+![React](https://img.shields.io/badge/react-frontend-blue)
+![TypeScript](https://img.shields.io/badge/typescript-language-blue)
+![Node](https://img.shields.io/badge/node.js-runtime-green)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-Tecnologias utilizadas:
+Frontend da aplicação **DS Deliver**, uma plataforma web para visualização de produtos e envio de pedidos.
 
-- ReactJS;
-- Netlify cli;
+Este projeto consome uma **API REST** responsável pelo processamento dos pedidos e persistência dos dados.
 
-# Pré-requisitos
+---
 
-- netlify-cli
+# Preview
+
+---
+
+# Tecnologias utilizadas
+
+* React
+* TypeScript
+* Axios
+* HTML
+* CSS
+* Node.js
+* Yarn / npm
+
+---
+
+# Arquitetura da aplicação
+
+```text
+Browser
+   |
+   v
+React Frontend
+   |
+   v
+REST API
+   |
+   v
+Database
+```
+
+Responsabilidades do frontend:
+
+* Renderização da interface
+* Consumo da API REST
+* Seleção de produtos
+* Envio de pedidos
+
+---
+
+# Funcionalidades
+
+* Listagem de produtos
+* Seleção de itens
+* Envio de pedidos
+* Interface responsiva
+* Comunicação com API REST
+
+---
+
+# Como executar o projeto
+
+## 1 - Clonar o repositório
 
 ```bash
-sudo npm install netlify-cli -g
+git clone https://github.com/Lubrum/dsdeliver-sds-frontend.git
+cd dsdeliver-sds-frontend
 ```
 
-# Execução
+---
 
-Pré-requisito: arquivo .env na raíz do projeto com as seguintes variáveis de ambiente:
+## 2 - Instalar dependências
 
-- REACT_APP_ACCESS_TOKEN_MAP_BOX: token para acesso à api do [Map Box](https://www.mapbox.com/) para o mapa da aplicação. É necessário criar um token no Map Box;
+Com npm:
 
-- REACT_APP_API_URL: url do backend deste serviço. [Pode ser acessado neste link](https://github.com/Lubrum/dsdeliver-sds-backend/tree/main);
-
-- REACT_APP_API_PRODUCTS_URL: path da api de obtenção da lista de produtos. No caso, é /products;
-
-- REACT_APP_API_ORDERS_URL: path api de geração de pedidos de produtos. No caso, é /orders;
-
-```bash 
-npm run netlify:start
+```bash
+npm install
 ```
 
-# Deploy no Netlify
+ou com yarn:
 
-O deploy do frontend é feito a cada push feito no github automaticamente.
+```bash
+yarn install
+```
 
-As variáveis de ambiente deste serviço são cadastradas diretamente nas configurações do site no Netlify. Não é utilizado o arquivo .env em produção.
+---
 
-[Tutorial passo a passo do deploy no Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/).
+## 3 - Executar o projeto
 
-Live link: https://sds2-delivery-food.netlify.app
+```bash
+npm start
+```
+
+ou
+
+```bash
+yarn start
+```
+
+A aplicação será iniciada em:
+
+```
+http://localhost:3000
+```
+
+---
+
+# Configuração da API
+
+A URL da API pode ser configurada em:
+
+```
+src/services/api.ts
+```
+
+Exemplo:
+
+```typescript
+const BASE_URL = "http://localhost:8080";
+```
+
+---
+
+# Estrutura do projeto
+
+```
+src
+ ├── components
+ ├── pages
+ ├── services
+ ├── types
+ ├── utils
+ ├── App.tsx
+ └── index.tsx
+```
+
+---
+
+# Integração com backend
+
+Este frontend foi desenvolvido para consumir uma API REST que fornece endpoints para:
+
+* listar produtos
+* registrar pedidos
+
+---
+
+# Autor
+
+Luciano Brum
+
+GitHub
+https://github.com/Lubrum
+
+Website
+https://lubrum.github.io
+
+---
+
+# Licença
+
+Este projeto está licenciado sob a **MIT License**.
