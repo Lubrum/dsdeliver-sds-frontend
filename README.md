@@ -4,6 +4,7 @@
 ![TypeScript](https://img.shields.io/badge/typescript-language-blue)
 ![Node](https://img.shields.io/badge/node.js-runtime-green)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/43adf737-6ffc-492e-95ad-fdda44517fb9/deploy-status)](https://app.netlify.com/projects/sds2-delivery-food/deploys)
 
 Frontend da aplicação **DS Deliver**, uma plataforma web para visualização de produtos e envio de pedidos.
 
