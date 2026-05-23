@@ -26,6 +26,7 @@ Este projeto consome uma **API REST** responsável pelo processamento dos pedido
 * HTML
 * CSS
 * Node.js
+* Vite
 * Yarn / npm
 
 ---
@@ -106,7 +107,7 @@ yarn start
 A aplicação será iniciada em:
 
 ```
-http://localhost:3000
+http://localhost:5173
 ```
 
 ---
@@ -116,14 +117,18 @@ http://localhost:3000
 A URL da API pode ser configurada em:
 
 ```
-src/services/api.ts
+src/api.ts
 ```
 
-Exemplo:
+Variáveis aceitas:
 
-```typescript
-const BASE_URL = "http://localhost:8080";
+```env
+VITE_API_PRODUCTS_URL=http://localhost:8080/products
+VITE_API_ORDERS_URL=http://localhost:8080/orders
+VITE_ACCESS_TOKEN_MAP_BOX=seu_token
 ```
+
+As variáveis antigas `REACT_APP_*` continuam aceitas para compatibilidade.
 
 ---
 
