@@ -1,9 +1,11 @@
 import axios from "axios";
 import { OrderPayload } from "./Orders/types";
 
-const PRODUCTS_URL = process.env.REACT_APP_API_PRODUCTS_URL
-const ORDERS_URL = process.env.REACT_APP_API_ORDERS_URL
-const mapboxToken = process.env.REACT_APP_ACCESS_TOKEN_MAP_BOX
+const env = import.meta.env;
+
+const PRODUCTS_URL = env.VITE_API_PRODUCTS_URL ?? env.REACT_APP_API_PRODUCTS_URL
+const ORDERS_URL = env.VITE_API_ORDERS_URL ?? env.REACT_APP_API_ORDERS_URL
+const mapboxToken = env.VITE_ACCESS_TOKEN_MAP_BOX ?? env.REACT_APP_ACCESS_TOKEN_MAP_BOX
 
 export function fetchProducts() {
     return axios(`${PRODUCTS_URL}`)

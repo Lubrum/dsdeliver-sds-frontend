@@ -1,3 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
 [[redirects]]
   from = "/orderss"
   to = "http://ec2-18-231-181-243.sa-east-1.compute.amazonaws.com/orders"

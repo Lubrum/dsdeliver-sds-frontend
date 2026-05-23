@@ -18,6 +18,11 @@ type Place = {
     }
 }
 
+type MapboxFeature = {
+    place_name: string;
+    center: [number, number];
+}
+
 type Props = {
     onChangeLocation: (location: OrderLocationData) => void;
 }
@@ -38,7 +43,7 @@ function OrderLocation({ onChangeLocation }: Props) {
 
         const fetchMapBox = (inputValue: string) => {
             fetchLocalMapBox(inputValue).then(res => {
-                const places = res.data.features.map((item: any) => {
+                const places = (res.data.features as MapboxFeature[]).map((item) => {
                     return ({
                         label: item.place_name,
                         value: item.place_name,
